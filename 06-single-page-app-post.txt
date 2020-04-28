@@ -1,0 +1,19 @@
+title Excercise 0.6
+
+note left of Browser:
+onClick => The Browser executes the JS
+code which sends a POST req to the Server 
+with the JSON data. The JS re-renders the
+list with the new note on the Client side.
+end note
+
+Browser->Server: POST new note as JSON to '/new_note_spa'
+
+Server->Browser: Server sends a status code of 201 (created)
+
+note left of Browser:
+The server sends a res with status
+'Created' (201) but no 'Redirect' since 
+the data has been rendered by the Browser
+already.
+end note

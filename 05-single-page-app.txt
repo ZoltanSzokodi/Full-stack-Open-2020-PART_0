@@ -1,0 +1,28 @@
+title Excercise 0.5
+
+Browser->Server: GET '/notes'
+
+Server->Browser: Send HTML
+
+Browser->Server: GET CSS '/main.css'
+
+Server->Browser: Send main.css
+
+Browser->Server: GET JS '/spa.js'
+
+Server->Browser: Send spa.js
+
+note left of Browser:
+browser starts executing js-code
+that requests JSON data from server 
+end note
+
+Browser->Server: GET '/data.json'
+
+Server->Browser: Send data
+
+note left of Browser:
+browser receives json data and 
+the JS renders the HTML with the
+correspondig deactivat
+end note
